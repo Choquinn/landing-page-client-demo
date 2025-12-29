@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sistema de gestão</title>
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    </head>
+    <body>
+        <section id="inicio">
+            <header id="header" class="header">
+                <div id="nav">
+                    <a href="#inicio">Inicio</a>
+                    <a href="#funcionalidades">Funcionalidades</a>
+                    <a href="#planos">Planos</a>
+                    <a href="#faq">Dúvidas Frequentes</a>
+                </div>
+            </header>
+            <div id="sidebar">
+                <div id="nav-al">
+                    <div id="links-nav">
+                        <a class="nav-l" onclick="closeSidebar()" href="#inicio">Inicio</a>
+                        <a class="nav-l" onclick="closeSidebar()" href="#funcionalidades">Funcionalidades</a>
+                        <a class="nav-l" onclick="closeSidebar()" href="#planos">Planos</a>
+                        <a class="nav-l" onclick="closeSidebar()" href="#faq">Dúvidas Frequentes</a>
+                    </div>
+                </div>
+            </div>
+            <div id="interaction">
+                <a id="button-h" class="Bbutton-top" href="">Acessar</a>
+                <button title="botão" class="my-button" id="my-button">
+                    <i class="fas fa-bars" id="ibutton"></i>
+                </button>
+            </div>
+            <div class="hero-inner">
+                <h1 id="h1-about">
+                    O sistema que você <span class="aquagreen">precisa,</span><br>
+                    com o suporte que você <span class="aquagreen">merece!</span>
+                </h1>
+                <div id="carousel-inicio">
+                    <div id="about-1" class="carousel-div basesq">
+                    </div>
+                    <div id="about-2" class="carousel-div sel">
+                    </div>
+                    <div id="about-3" class="carousel-div basdir">
+                    </div>
+                </div>
+            </div>
+            <div id="sobre">
+                <h1 class="titulo">Entenda um pouco mais</h1>
+                <div id="links-sobre">
+                    <div id="aba-sistema" class="aba sel" onClick="selectTab(this)">Sistema</div>
+                    <div id="aba-ecom" class="aba" onClick="selectTabEs(this)">E-Commerce</div>
+                    <div id="aba-catalogo" class="aba" onClick="selectTab(this)">Catálogo</div>
+                </div>
+                <div id="imagens-sobre">
+                    <img id="image-sobre" src="Images/dashboard.png" alt="about-1">
+                </div>
+                <div id="texto-sobre">
+                    <h1 id="sobre-titulo">Sistema Simples e Intuitivo</h1>
+                    <p id="sobre-texto">Usando nosso sistema ERP, você tem acesso a indicadores em<br>tempo real do seu negócio, um catálogo digital completamente<br>integrado e a mais de 20 relatórios gerenciais!</p>
+                </div>
+            </div>
+        </section>
+        <section id="funcionalidades">
+            <br><br><br>
+            <h1 class="titulo">Funcionalidades</h1>
+            <div id="func-blocos">
+                <div id="cadastros" class="bloco-func">
+                    <img src="Images/Icons/cadastro.png" alt="cadastro">
+                    <h1>Cadastros</h1>
+                    <p>Cadastro simples e rápido de tudo<br>que você possa precisar</p>
+                </div>
+                <div id="nfe" class="bloco-func">
+                    <img src="Images/Icons/emissor.png" alt="emissor">
+                    <h1>Emissor de NF-e</h1>
+                    <p>Imprimimos os principais tipos<br>de Nota Fiscal do mercado</p>
+                </div>
+                <div id="gestao" class="bloco-func">
+                    <img src="Images/Icons/gestão.png" alt="gestao">
+                    <h1>Gestão de Vendas</h1>
+                    <p>Sistema de controle de vendas<br>descomplicado</p>
+                </div>
+                <div id="catalogo" class="bloco-func">
+                    <img src="Images/Icons/catalogo.png" alt="catalogo">
+                    <h1>Catálogo Digital</h1>
+                    <p>Sua vitrine online de produtos<br>pronta em 5 minutos</p>
+                </div>
+                <div id="estoque" class="bloco-func">
+                    <img src="Images/Icons/estoque.png" alt="estoque">
+                    <h1>Controle de Estoque</h1>
+                    <p>Faça a gestão do estoque do seu<br>catálogo digital</p>
+                </div>
+                <div id="financeiro" class="bloco-func">
+                    <img src="Images/Icons/financeiro.png" alt="financeiro">
+                    <h1>Controle Financeiro</h1>
+                    <p>Acompanhe seu contas a pagar e<br>contas a receber</p>
+                </div>
+                <div id="pdv" class="bloco-func">
+                    <img src="Images/Icons/pdv.png" alt="pdv">
+                    <h1>PDV</h1>
+                    <p>Faça suas vendas também através<br>do seu frente de caixa</p>
+                </div>
+                <div id="pedido" class="bloco-func">
+                    <img src="Images/Icons/pedidos.png" alt="pedido">
+                    <h1>Pedido Condicional</h1>
+                    <p>Emita pedidos condicionais para<br>seus clientes integrado ao estoque</p>
+                </div>
+                <div id="orcamento" class="bloco-func">
+                    <img src="Images/Icons/orcamentos.png" alt="orcamento">
+                    <h1>Orçamentos</h1>
+                    <p>Estime as receitas e despesas de<br>qualquer data selecionada</p>
+                </div>
+                <div id="servico" class="bloco-func">
+                    <img src="Images/Icons/servico.png" alt="servico">
+                    <h1>Ordens de Serviço</h1>
+                    <p>Tenha a sua ordem com poucos cliques<br>de forma rápida e fácil</p>
+                </div>
+                <div id="contador" class="bloco-func">
+                    <img src="Images/Icons/painel.png" alt="contador">
+                    <h1>Painel do Contador</h1>
+                    <p>Envie os arquivos ao seu contador<br>de forma automática</p>
+                </div>
+                <div id="ecom" class="bloco-func">
+                    <img src="Images/Icons/ecommerce.png" alt="ecom">
+                    <h1>Integração E-Commerce</h1>
+                    <p>ERP para e-commerce integrado às<br>maiores plataformas e marketplaces</p>
+                </div>
+            </div>
+        </section>
+        <section id="planos">
+            <br><br><br>
+            <h1 class="titulo">Planos e Preços</h1>
+            <div id="links-planos">
+                <div id="aba-mensal" class="aba-p" onClick="selectTabPlan(this)">Mensal</div>
+                <div id="aba-anual" class="aba-p sel" onClick="selectTabPlan(this)">Anual</div>
+            </div>
+            <div id="blocos-planos">
+                <div id="plano-bronze" class="bloco-plano off">
+                    <h1 class="nome-plano">Plano Bronze</h1>
+                    <span data-plano="bronze" class="preco-plano">R$ 79,90</span>
+                    <h2 class="subheader">/Mês no contrato anual</h2>
+                    <div class="descricao-plano">
+                        <ul>
+                            <li>1 Usuário</li>
+                            <li>20MB de Armazenamento</li>
+                            <li>Gestão de Estoque</li>
+                            <li>Frente de caixa (PDV)</li>
+                            <li>Orçamentos</li>
+                            <li>Ordens de Serviço</li>
+                            <li>Permissões de Acesso</li>
+                            <li>Dashboards de Gestão</li>
+                            <li>Suporte Whatsapp</li>
+                            <li>Controle Financeiro</li>
+                        </ul>
+                    </div>
+                    <a id="link-bronze" class="Bbutton" href="https://bit.ly/42KlW8n">Contratar</a>
+                </div>
+                <div id="plano-prata" class="bloco-plano basesq">
+                    <h1 class="nome-plano">Plano Prata</h1>
+                    <span data-plano="prata" class="preco-plano">R$ 119,90</span>
+                    <h2 class="subheader">/Mês no contrato anual</h2>
+                    <div class="descricao-plano">
+                        <ul>
+                            <li>2 Usuários</li>
+                            <li>50MB de Armazenamento</li>
+                            <li>Gestão de Estoque</li>
+                            <li>Frente de caixa (PDV)</li>
+                            <li>Orçamentos</li>
+                            <li>Ordens de Serviço</li>
+                            <li>Permissões de Acesso</li>
+                            <li>Dashboards de Gestão</li>
+                            <li>Suporte Whatsapp</li>
+                            <li>Controle Financeiro</li>
+                            <li>Emissor NF-e, NFC-e</li>
+                        </ul>
+                    </div>
+                    <a id="link-prata" class="Bbutton" href="https://bit.ly/46V3Ym6">Contratar</a>
+                </div>
+                <div id="plano-ouro" class="bloco-plano sel">
+                    <h1 class="nome-plano">Plano Ouro</h1>
+                    <span data-plano="ouro" class="preco-plano">R$ 159,90</span>
+                    <h2 class="subheader">/Mês no contrato anual</h2>
+                    <div class="descricao-plano">
+                        <ul>
+                            <li>2 Usuários</li>
+                            <li>Armazenamento Ilimitado</li>
+                            <li>Gestão de Estoque</li>
+                            <li>Frente de caixa (PDV)</li>
+                            <li>Orçamentos</li>
+                            <li>Ordens de Serviço</li>
+                            <li>Permissões de Acesso</li>
+                            <li>Dashboards de Gestão</li>
+                            <li>Suporte Whatsapp</li>
+                            <li>Controle Financeiro</li>
+                            <li>Emissor NF-e, NFC-e</li>
+                            <li>Sped Fiscal, NFS-e e MDF-e</li>
+                            <li>Emissão de Boletos Registrados</li>
+                            <li>Conciliação Bancária</li>
+                            <li>Atende Empresas do Lucro Real e Presumido</li>
+                        </ul>
+                    </div>
+                    <a id="link-ouro" class="Bbutton" href="https://bit.ly/4gIQBZM">Contratar</a>
+                </div>
+                <div id="plano-diamante" class="bloco-plano basdir">
+                    <h1 class="nome-plano">Plano Diamante</h1>
+                    <span data-plano="diamante" class="preco-plano">R$ 239,90</span>
+                    <h2 class="subheader">/Mês no contrato anual</h2>
+                    <div class="descricao-plano">
+                        <ul>
+                            <li>5 Usuários</li>
+                            <li>Armazenamento Ilimitado</li>
+                            <li>Gestão de Estoque</li>
+                            <li>Frente de caixa (PDV)</li>
+                            <li>Orçamentos</li>
+                            <li>Ordens de Serviço</li>
+                            <li>Permissões de Acesso</li>
+                            <li>Dashboards de Gestão</li>
+                            <li>Suporte Whatsapp</li>
+                            <li>Controle Financeiro</li>
+                            <li>Emissor NF-e, NFC-e</li>
+                            <li>Sped Fiscal, NFS-e e MDF-e</li>
+                            <li>Emissão de Boletos Registrados</li>
+                            <li>Conciliação Bancária</li>
+                            <li>Atende Empresas do Lucro Real e Presumido</li>
+                        </ul>
+                    </div>
+                    <a id="link-diamante" class="Bbutton" href="https://bit.ly/3IfRlc8">Contratar</a>
+                </div>
+            </div>
+            <h1 class="titulo-extra">Você Ainda Pode Incluir:</h1>
+            <div id="bloco-adicional">
+                <ul>
+                    <li>Catálogo Digital</li>
+                    <li>Integração com Lojas Virtuais e Marketplaces</li>
+                    <li>Central de Atendimento para Whatsapp</li>
+                    <li>PIX Integrado</li>
+                </ul>
+            </div>
+        </section>
+        <section id="faq">
+            <br><br><br>
+            <h1 class="titulo">Dúvidas Frequentes</h1>
+            <div class="duvidas">
+                <div id="duvidas-bloco">
+                    <div class="duvs">
+                        <div class="duvs-header">
+                            <h1 class="titulo-duv">O que é o Sistema e como ele pode ajudar no meu dia a dia?</h1>
+                            <img id="duv-1" class="faqbutton" src="Images/Icons/open.png" alt="Botão">
+                        </div>
+                        <p id="text-1" class="p">O Sistema é um sistema de gestão que oferece soluções para simplificar a rotina do seu negócio, automatizando diversos processos do seu dia-a-dia. Ele possui integração com os principais canais de venda do mercado, dessa forma, você pode centralizar e controlar suas vendas, estoque, fazer gestão de preços, emitir notas fiscais e muito mais, tudo em um só lugar. Tendo uma versão web e desktop para atender o cliente da melhor forma.</p>
+                    </div>
+                    <div class="duvs">
+                        <div class="duvs-header">
+                            <h1 class="titulo-duv">Tenho uma loja física, posso usar o Sistema?</h1>
+                            <img id="duv-2" class="faqbutton" src="Images/Icons/open.png" alt="Botão">
+                        </div>
+                        <p id="text-2" class="p">O Sistema oferece a extensão PDV para quem tem ponto de venda físico. Com essa funcionalidade, você consegue controlar sua loja física e, se você trabalha também com lojas virtuais, é possível gerenciar suas vendas e estoques de ambas operações através do Sistema.</p>
+                    </div>
+                    <div class="duvs">
+                        <div class="duvs-header">
+                            <h1 class="titulo-duv">Sou MEI, consigo emitir notas fiscais no Sistema?</h1>
+                            <img id="duv-3" class="faqbutton" src="Images/Icons/open.png" alt="Botão">
+                        </div>
+                        <p id="text-3" class="p">Sim, mas é necessário que sua empresa possua Inscrição Estadual, um certificado digital configurado no sistema (A3) e esteja habilitada para emissão de notas no Sefaz de seu estado. Sugerimos que você contate seu contador afim de verificar se seu estado permite que empresas do tipo MEI tenham inscrição estadual. Caso seu estado não permita a inscrição estadual, não será possível emitir notas pelo Sistema.</p>
+                    </div>
+                    <div class="duvs">
+                        <div class="duvs-header">
+                            <h1 class="titulo-duv">Precisa instalar algum aplicativo?</h1>
+                            <img id="duv-4" class="faqbutton" src="Images/Icons/open.png" alt="Botão">
+                        </div>
+                        <p id="text-4" class="p">Ao conversar com o consultor ele irá indicar para a sua necessidade se o sistema Desktop ou Web irão lhe atender melhor. A versão WEB, você consegue acessar por celular ou computador sem necessidade de baixar aplicativo.</p>
+                    </div>
+                    <div class="duvs">
+                        <div class="duvs-header">
+                            <h1 class="titulo-duv">Qual a forma de pagamento?</h1>
+                            <img id="duv-5" class="faqbutton" src="Images/Icons/open.png" alt="Botão">
+                        </div>
+                        <p id="text-5" class="p">A implantação pode ser paga no pix com desconto, entrada mais 3 no boleto ou até 10x no cartão. A mensalidade pode ser paga no boleto mês a mês, debito recorrente no cartão ou de uma vez. Consulte os benefícios com o consultor.</p>
+                    </div>
+                    <div class="duvs">
+                        <div class="duvs-header">
+                            <h1 class="titulo-duv">Como posso solicitar cancelamento?</h1>
+                            <img id="duv-6" class="faqbutton" src="Images/Icons/open.png" alt="Botão">
+                        </div>
+                        <p id="text-6" class="p">O cancelamento com reembolso é no prazo de 7 dias após a contratação do plano, após esse período realizamos somente o cancelamento do serviço sem cobrança de multa para cliente MENSAL que já tenham pago 3 mensalidades caso não tenha será cobrada 3 mensalidades ou o que restar para tal. Para clientes do plano anula a multa de cancelamento antes de 1 ano são 3 mensalidades, podendo o cliente usar ou não o sistema durante esse período. A solicitação de cancelamento deverá ser enviada por e-mail.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer id="footer">
+            <div id="rodape">
+            </div>
+            <div id="rodape-t">
+                <div id="itens">
+                    <div id="header-r">
+                        <img src="Images/logo.png" alt="logo" id="logo-r">
+                    </div>
+                    <div id="nav-r">
+                        <h2 class="h2-r">Sobre Nós</h2>
+                        <ul>
+                            <li><a href="#inicio">Início</a></li>
+                            <li><a href="#funcionalidades">Funcionalidades</a></li>
+                            <li><a href="#planos">Planos</a></li>
+                            <li><a href="#faq">Dúvidas Frequentes</a></li>
+                        </ul>
+                    </div>
+                    <div id="contato">
+                        <h2 class="h2-r">Contato</h2>
+                        <p>Endereço: Av. Peak of beak, José Pavão - BR<br> CEP: 40028-922</p>
+                        <p>Ligue agora mesmo<br>(88) 4002-8922</p>
+                    </div>
+                </div>
+                <p id="copyright">Copyright ©️ 2019 - 2025 . Todos os Direitos Reservados -</p>
+            </div>
+        </footer>
+        <!-- JavaScript -->
+        <script src="JS/script.js"></script>
+    </body>
+</html>
